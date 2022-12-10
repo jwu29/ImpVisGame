@@ -1,0 +1,377 @@
+.App {
+  font-family: "sans-serif", "Verdana", serif;
+  text-align: center;
+}
+
+body {
+  background-color: #002060;
+  color: white;
+}
+.question {
+  border: dotted 5px rgba(255, 217, 0, 0.7);
+  margin: 2%;
+  border-radius: 1%;
+  background-color: #5a9bd5;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  font-family: "sans-serif", "Verdana";
+  width: 95%;
+  height: auto;
+}
+.button {
+  background-color: #5a9bd5;
+  border: dotted 5px #b6c5d1;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 3vw;
+  border-radius: 1%;
+  cursor: pointer;
+  font-family: "sans-serif", "Verdana";
+  font-size: auto;
+  width: 41%;
+  height: 100%;
+  white-space: normal;
+}
+
+.button:hover {
+  border-color: #d6af01;
+  color: black;
+}
+
+.clicked {
+  background-color: #d4af06;
+}
+.used {
+  background-color: #5a9bd5;
+  color: #5a9bd5;
+  cursor: not-allowed;
+}
+.button.used:hover {
+  background-color: #5a9bd5;
+  color: #5a9bd5;
+  border-color: white;
+  cursor: not-allowed;
+}
+
+.correct {
+  background-color: #6fe02e;
+  color: black;
+  cursor: not-allowed;
+}
+
+.wrong {
+  background-color: #b60000;
+  color: black;
+  cursor: not-allowed;
+}
+
+.Correct {
+  color: rgb(10, 255, 10);
+  text-align: center;
+  font-size: 3em;
+  font-family: "sans-serif", "Copperplate";
+}
+
+.Incorrect {
+  color: rgb(185, 11, 11);
+  text-align: center;
+  font-size: 3em;
+  font-family: "sans-serif", "Copperplate";
+}
+
+.nocursor {
+  cursor: not-allowed;
+}
+.NoAnswer {
+  display: none;
+}
+.answer_sub {
+  color: green;
+  margin-left: 43.5%;
+}
+
+.fif {
+  background-color: #4ca2f3;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 1px;
+  margin: 1.5%;
+  width: 100%;
+  height: 9vh;
+  cursor: pointer;
+  font-family: "sans-serif", "Verdana";
+}
+
+.fif.clicked {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.fif.used {
+  color: #4ca2f3;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.call {
+  background-color: #3437bd;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 5px 1px;
+  margin: 1.5%;
+  width: 100%;
+  height: 9vh;
+  cursor: pointer;
+}
+
+.call.clicked {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.call.used {
+  color: #3437bd;
+  cursor: not-allowed;
+}
+.call_c {
+  background-color: #3437bd;
+  border: none;
+  color: white;
+  opacity: 0.5;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 1px;
+  margin: 1.5%;
+  width: 100%;
+  height: 9vh;
+  cursor: not-allowed;
+}
+.call_u {
+  background-color: #3437bd;
+  border: none;
+  color: #3437bd;
+  opacity: 0.5;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 1px;
+  margin: 1.5%;
+  width: 100%;
+  height: 9vh;
+  cursor: not-allowed;
+}
+
+.poll {
+  background-color: #334422;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 1px;
+  margin: 1.5%;
+  width: 100%;
+  height: 9vh;
+  cursor: pointer;
+}
+.poll.clicked {
+  background-color: #334422;
+  border: none;
+  color: white;
+  opacity: 0.5;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 1px;
+  margin: 1.5%;
+  width: 100%;
+  height: 9vh;
+  cursor: not-allowed;
+}
+.poll.used {
+  background-color: #334422;
+  border: none;
+  color: #334422;
+  opacity: 0.5;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 1px;
+  margin: 1.5%;
+  width: 100%;
+  height: 9vh;
+  cursor: not-allowed;
+}
+
+.ra {
+  background-color: #df9408;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 1px;
+  margin: 1.5%;
+  width: 100%;
+  height: 9vh;
+  cursor: pointer;
+}
+.ra.clicked {
+  background-color: #df9408;
+  border: none;
+  color: white;
+  opacity: 0.5;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 1px;
+  margin: 1.5%;
+  width: 100%;
+  height: 9vh;
+  cursor: not-allowed;
+}
+.ra.used {
+  background-color: #df9408;
+  border: none;
+  color: #df9408;
+  opacity: 0.5;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 1px;
+  margin: 1.5%;
+  width: 100%;
+  height: 9vh;
+  cursor: not-allowed;
+}
+
+.poll_table,
+.poll_th,
+.poll_td {
+  border: 1px solid brown;
+  color: white;
+  border-collapse: collapse;
+  padding: 1px 20px;
+}
+.poll_th {
+  background-color: #96d4d4;
+  color: black;
+}
+.price_table,
+.price_th,
+.price_td {
+  border-style: solid;
+  border-width: 1px 2px;
+  border-color: rgb(255, 255, 255) black;
+  border-collapse: collapse;
+  text-align: center;
+  width: 90%;
+  padding: 5px;
+  margin: 1px, 5px;
+  font-family: "sans-serif", "Copperplate";
+}
+.price_table {
+  color: white;
+  border: solid #000d3b;
+  height: 27.5vh;
+}
+.price_tr:nth-child(even) {
+  background-color: #002060;
+}
+.price_current {
+  background-color: #f8c045;
+  color: black;
+}
+.lifelines_table {
+  border-collapse: collapse;
+  border: none;
+}
+.top_row_left {
+  display: inline-block;
+  float: left;
+  width: 32.5%;
+}
+.top_row_right {
+  display: inline-block;
+  float: right;
+  width: 35%;
+}
+.options {
+  clear: both;
+}
+.poll_results {
+  text-align: center;
+  font-family: "sans-serif", "copperplate";
+}
+
+.bottomtext {
+  position: absolute;
+  bottom: 2.5vh;
+  width: 100%;
+  text-align: center;
+}
+
+h1,
+label {
+  font-family: "sans-serif", "Copperplate";
+}
+
+.finalprice {
+  font-size: 50px;
+  color: #f8c045;
+  font-family: "sans-serif", "Copperplate";
+}
+div.StartLogo {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+img.start {
+  width: 125px;
+  float: left;
+}
+img.quiz {
+  width: 30vw;
+  float: left;
+}
+u {
+  font-size: 12px;
+  text-align: center;
+  font-family: "san-serif", "Verdana";
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+th {
+  color: gold;
+}
+
+h2 {
+  font-family: "sans-serif", "Copperplate";
+  color: gold;
+  font-size: 1.3em;
+}
+li {
+  text-align: justify;
+  font-family: "sans-serif", "Verdana";
+  font-size: 0.9em;
+}
